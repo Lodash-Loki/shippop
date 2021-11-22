@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"context"
+
+	"github.com/Lodash-Loki/shippop/bootstrap"
+)
 
 func main() {
-	fmt.Println("Hello Loki")
+	ctx := context.Background()
+	bootstrap.Dispatch(ctx)
 }
